@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,34 @@
   <link rel="stylesheet" href="styles/journal.css/">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <h1>Daily Journal</h1>
+  <form action="">
+    <fieldset>
+      <label for="postDate">Post Date:</label>
+      <input id="postDate" name="postDate" type="date">
+    </fieldset>
+    <fieldset>
+      <label for="concepts">Concepts Covered:</label>
+      <input id="concepts" name="concepts" type="text">
+    </fieldset>
+    <fieldset>
+      <label for="entry">Journal Entry:</label>
+      <input id="entry" name="entry" type="textarea">
+    </fieldset>
+    <fieldset>
+      <label for="mood">Mood:</label>
+      <select id="mood" name="mood">
+        <option value="happy">happy</option>
+        <option value="sad">sad</option>
+        <option value="bad">bad</option>
+        <option value="neutral">neutral</option>
+      </select>
+    </fieldset>
+    <input id="submit" name="submit" value="Submit" type="submit">
+  </form>
+
 </body>
+
 </html>
