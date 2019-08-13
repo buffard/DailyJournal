@@ -8,3 +8,5 @@ const makeJournalEntryComponent = {
       <p class='mood'>${journalEntry.mood}</p>
     </div>`
 }}
+
+export default makeJournalEntryComponent;

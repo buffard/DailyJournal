@@ -1,3 +1,5 @@
+import makeJournalEntryComponent from './entryComponent.js'
+
 const insertEntry = {
   insertHtml(entries) {
     entries.forEach(obj => {
@@ -5,3 +7,5 @@ const insertEntry = {
     })
   }
 }
+
+export default insertEntry;
