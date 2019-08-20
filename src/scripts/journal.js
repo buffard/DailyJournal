@@ -1,37 +1,24 @@
-const journalEntry = [
-  {
-    date: "07/24/2018",
-    concept: "Array methods",
-    entry: "We learned about array methods, but only forEach made sense",
-    mood: "Ok"
-  },
-  {
-    date: "10/22/2018",
-    concept: "Do I Work",
-    entry: "I just want this to work, then I'll understand",
-    mood: "Happy"
+import API from "./data.js"
+import insertEntry from "./entriesDOM.js"
+
+API.getJournalEntries().then(data => insertEntry.insertHtml(data))
+
+let postDate = document.querySelector("#postDate").value
+let concepts = document.querySelector("#concepts").value
+let entry = document.querySelector("#entry")
+let mood = document.querySelector("#mood")
+let submitBtn = document.querySelector("#submit")
+
+submitBtn.addEventListener('click', () => {
+  
+  console.log(concepts)
+})
+
+const createEntry = (postDate) => {
+  return{
+    postDate: postDate.postDate
   }
-]
-
-const makeJournalEntryComponent = (journalEntry) => {
-  // Create your own HTML structure for a journal entry
-  return `  <div class="insertedEntry">
-      <h1 class="pubConcept">${journalEntry.concept}</h1>
-      <h3 class='pubDate'>${journalEntry.date}</h3>
-      <p class='pubEntry'>${journalEntry.entry}</p>
-      <p class='mood'>${journalEntry.mood}</p>
-    </div>`
-}
-/*
-    Purpose: To render all journal entries to the DOM
-    Arguments: entries (array of objects)
-*/
-const renderJournalEntries = (entries) => {
-  console.log("Here")
-  entries.forEach(obj => {
-    document.querySelector(".entryLog").innerHTML += makeJournalEntryComponent(obj)
-  })
 }
 
-// Invoke the render function
-renderJournalEntries(journalEntry)
+
+

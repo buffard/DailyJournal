@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "id": "1",
+      "date": "07/24/2018",
+      "concept": "Array methods",
+      "entry": "We learned about array methods, but only forEach made sense",
+      "mood": "Ok"
+    },
+    {
+      "id": "2",
+      "date": "10/22/2018",
+      "concept": "Do I Work",
+      "entry": "I just want this to work, then I'll understand",
+      "mood": "Happy"
+    }
+  ]
+}
